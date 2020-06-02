@@ -1,0 +1,29 @@
+import java.io*;
+import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+class UserMainCode
+{
+public int NonRepeatingDigits(int input1){
+    int r,n,count=0;
+		n=input1;
+		ArrayList<Integer>list1=new ArrayList<Integer>();
+		while(n>0) {
+			r=n%10;
+			list1.add(r);
+			n=n/10;
+		}
+		HashMap<Integer,Integer> hmap= new HashMap<Integer,Integer>();
+		for(int i=0;i<list1.size();i++) {
+			if(hmap.containsKey(list1.get(i))) {
+				hmap.put(list1.get(i), hmap.get(list1.get(i))+1);
+			}
+			else
+				hmap.put(list1.get(i), 1);
+		}
+		for(int i=0;i<list1.size();i++) {
+			if(hmap.get(list1.get(i))==1) {
+				count=count+1;
+			}
+		}
+		return count;
