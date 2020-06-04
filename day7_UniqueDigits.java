@@ -4,11 +4,9 @@ import java.util.ArrayList;
 import java.util.HashSet;    
 class UserMainCode
 {
-public int UniqueDigits(int input1){
-import java.util.ArrayList;
-import java.util.HashSet;    
-	int count=0,r;
-        ArrayList<Integer>list1 = new ArrayList<Integer>();
+public int UniqueDigits(int input1){ 
+		int count=0,r;
+        	ArrayList<Integer>list1 = new ArrayList<Integer>();
 		while(input1>0){
 			r=input1%10;
 			input1/=10;
