@@ -2,7 +2,7 @@ import java.io*;
 import java.util.*;
 class UserMainCode
 {
-public String stringPalindrome(String input1){
+public int stringPalindrome(String input1){
 		input1=input1.toLowerCase();
 		StringBuilder s=new StringBuilder(input1);
 		s.reverse();
