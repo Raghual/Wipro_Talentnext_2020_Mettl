@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.HashSet;    
 class UserMainCode
 {
-public int AddAllDigitsCount(int input1){
+public int UniqueDigits(int input1){
 import java.util.ArrayList;
 import java.util.HashSet;    
 	int count=0,r;
