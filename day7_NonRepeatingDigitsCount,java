@@ -27,3 +27,5 @@ public int NonRepeatingDigits(int input1){
 			}
 		}
 		return count;
+}
+}
