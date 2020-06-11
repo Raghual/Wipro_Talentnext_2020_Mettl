@@ -6,23 +6,24 @@ public class PrimeOrNot {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner s= new Scanner(System.in);
-		int a,flag=0;
-		a=s.nextInt();
-		if(a==2) 
-			System.out.println("Prime");
-		if(a>2) {
-		for(int i=2;i<a;i++) {
-			if(a%i==0) {
-				flag=0;
-				break;}
-			else
-				flag=1;
+		int flag=0;
+		if(input1==2){
+			return 2;
 		}
-		if(flag==1)
-			System.out.println("Prime");
+		for(int i=2;i<input1;i++){
+			if(input1%i==0){
+				flag=1;
+				break;
+			}
+			else{
+				flag=0;
+			}
+		}
+		if(flag==0){
+			return 2;
+		}
 		else
-			System.out.println("Consonant");}
+			return 1;
 
 	}
 
